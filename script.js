@@ -26,7 +26,7 @@ function showMessage(response) {
     // Add a mouseover event listener to the "No" button
     noButton.addEventListener("mouseover", () => {
       if (!videoPlayed) {
-        document.getElementsByClassName("image")[0].style.display = "none";
+        document.getElementsByClassName("image")[0].style.visibility = "hidden";
         const videoElement = document.createElement("video");
         videoElement.src = "./Maroon 5 - Sugar.mp4#t=42";
         videoElement.autoplay = true;
@@ -75,6 +75,7 @@ function showMessage(response) {
     yesMessage.textContent = "See you on the 14th mi bb";
     yesMessage.style.display = "block";
     yesMessage.style.fontStyle = "normal";
+    document.getElementsByClassName("image")[0].style.visibility = "visible";
     document.getElementsByClassName("image")[0].src = "images/dance.gif";
 
     // Remove the "Yes" button

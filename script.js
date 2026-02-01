@@ -26,7 +26,7 @@ function showMessage(response) {
     // Add a mouseover event listener to the "No" button
     noButton.addEventListener("mouseover", () => {
       if (!videoPlayed) {
-        document.getElementsByClassName("image").remove();
+        document.getElementsByClassName("image")[0].style.display = "none";
         const videoElement = document.createElement("video");
         videoElement.src = "./Maroon 5 - Sugar.mp4#t=42";
         videoElement.autoplay = true;

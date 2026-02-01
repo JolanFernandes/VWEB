@@ -27,6 +27,8 @@ function showMessage(response) {
     noButton.addEventListener("mouseover", () => {
       if (!videoPlayed) {
         document.getElementsByClassName("image")[0].style.visibility = "hidden";
+        document.querySelector(".pp").style.marginTop = "100px";
+
         const videoElement = document.createElement("video");
         videoElement.src = "./Maroon 5 - Sugar.mp4#t=42";
         videoElement.autoplay = true;

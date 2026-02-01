@@ -75,8 +75,7 @@ function showMessage(response) {
     yesMessage.textContent = "See you on the 14th mi bb";
     yesMessage.style.display = "block";
     yesMessage.style.fontStyle = "normal";
-    const imageElement = document.createElement("image");
-    imageElement.src = "images/dance.gif";
+    document.getElementsByClassName("image")[0].src = "images/dance.gif";
 
     // Remove the "Yes" button
     document.getElementById("yesButton").remove();
